@@ -21,23 +21,43 @@ html
         button.ui.button.red 搜索
 
     .container
-      .ui.grid
-        .three.wide.column
-          .ui.secondary.vertical.pointing.menu.red(style="width: 100%")
-            a.item.active 首页
-            a.item 服装
-            a.item 鞋
-            a.item 家用电器
-            a.item 运动户外
-            a.item 汽车用品
-            a.item 营养保健
-            a.item 母婴用品
-        .nine.wide.column
-          .flexslider
-            ul.slides
-              li
-                img(src="http://img30.360buyimg.com/da/jfs/t967/183/218906378/68120/73760059/550bd14eN4f3668d3.jpg")
-              li
-                img(src="http://img11.360buyimg.com/da/jfs/t826/149/1225678472/88702/43233b67/55911bd3N5d397e36.jpg")
-        .four.wide.column 3
+      .section
+        .ui.grid
+          .three.wide.column
+            .ui.secondary.vertical.pointing.menu.red(style="width: 100%")
+              a.item.active 首页
+              a.item 手机、数码、通信
+              a.item 电脑、办公
+              a.item 家居、家具、家装、厨具
+              a.item 男装、女装、内衣、珠宝
+              a.item 鞋靴、箱包、钟表、奢侈品
+              a.item 食品、酒类、生鲜、特产
+              a.item 图书、音像、数字商品
+          .nine.wide.column
+            .flexslider
+              ul.slides
+                li
+                  img(src="http://img30.360buyimg.com/da/jfs/t967/183/218906378/68120/73760059/550bd14eN4f3668d3.jpg")
+                li
+                  img(src="http://img11.360buyimg.com/da/jfs/t826/149/1225678472/88702/43233b67/55911bd3N5d397e36.jpg")
+          .four.wide.column 3
+      .section
+        h2 推荐书籍
+        .ui.six.column.grid.ui.special.cards
+          - for(var i = 0; i < 10; i++)
+            .column
+              .ui.fluid.card
+                .blurring.dimmable.image
+                  .ui.dimmer
+                    .content
+                      .center
+                        .ui.inverted.button Purchas
+                  img(src="https://upload.wikimedia.org/wikipedia/commons/0/07/Goethe's_Faust.jpeg")
+                .content
+                  a.header Faust
+                  .meta
+                    span.date 歌德
+                .extra.content
+                  a 12 元
 
+       
