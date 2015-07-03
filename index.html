@@ -3,7 +3,12 @@
   <head>
     <title>Store</title>
     <link rel="stylesheet" href="static/css/semantic.min.css">
+    <link rel="stylesheet" href="static/css/flexslider.css">
     <link rel="stylesheet" href="static/css/global.css">
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/jquery.flexslider-min.js"></script>
+    <script src="static/js/semantic.min.js"></script>
+    <script src="static/js/global.js"></script>
   </head>
   <body>
     <header>
@@ -19,10 +24,17 @@
     </div>
     <div class="container">
       <div class="ui grid">
-        <div class="four wide column">
-          <div class="ui secondary vertical pointing menu red"><a class="item active">首页</a><a class="item">服装</a><a class="item">鞋</a><a class="item">家用电器</a><a class="item">运动户外</a><a class="item">汽车用品</a><a class="item">营养保健</a><a class="item">母婴用品</a></div>
+        <div class="three wide column">
+          <div style="width: 100%" class="ui secondary vertical pointing menu red"><a class="item active">首页</a><a class="item">服装</a><a class="item">鞋</a><a class="item">家用电器</a><a class="item">运动户外</a><a class="item">汽车用品</a><a class="item">营养保健</a><a class="item">母婴用品</a></div>
         </div>
-        <div class="eight wide column">2</div>
+        <div class="nine wide column">
+          <div class="flexslider">
+            <ul class="slides">
+              <li><img src="http://img30.360buyimg.com/da/jfs/t967/183/218906378/68120/73760059/550bd14eN4f3668d3.jpg"></li>
+              <li><img src="http://img11.360buyimg.com/da/jfs/t826/149/1225678472/88702/43233b67/55911bd3N5d397e36.jpg"></li>
+            </ul>
+          </div>
+        </div>
         <div class="four wide column">3</div>
       </div>
     </div>

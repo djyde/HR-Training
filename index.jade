@@ -3,7 +3,12 @@ html
   head
     title Store
     link(rel="stylesheet", href="static/css/semantic.min.css")
+    link(rel="stylesheet", href="static/css/flexslider.css")
     link(rel="stylesheet", href="static/css/global.css")
+    script(src="static/js/jquery.min.js")
+    script(src="static/js/jquery.flexslider-min.js")
+    script(src="static/js/semantic.min.js")
+    script(src="static/js/global.js")
   body
     header
       .ui.stackable.menu(style="border-radius: 0")
@@ -17,8 +22,8 @@ html
 
     .container
       .ui.grid
-        .four.wide.column
-          .ui.secondary.vertical.pointing.menu.red
+        .three.wide.column
+          .ui.secondary.vertical.pointing.menu.red(style="width: 100%")
             a.item.active 首页
             a.item 服装
             a.item 鞋
@@ -27,6 +32,12 @@ html
             a.item 汽车用品
             a.item 营养保健
             a.item 母婴用品
-        .eight.wide.column 2
+        .nine.wide.column
+          .flexslider
+            ul.slides
+              li
+                img(src="http://img30.360buyimg.com/da/jfs/t967/183/218906378/68120/73760059/550bd14eN4f3668d3.jpg")
+              li
+                img(src="http://img11.360buyimg.com/da/jfs/t826/149/1225678472/88702/43233b67/55911bd3N5d397e36.jpg")
         .four.wide.column 3
 
