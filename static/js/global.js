@@ -8,7 +8,8 @@
 
     $('.flexslider').flexslider({
       slideshowSpeed: 3000,
-      controlNav: false
+      controlNav: false,
+      directionNav: false
     });
 
     $('.special.cards .image').dimmer({
