@@ -3,8 +3,25 @@ html
   head
     title Store
     link(rel="stylesheet", href="static/css/semantic.min.css")
+    link(rel="stylesheet", href="static/css/global.css")
   body
-    .ui.secondary.vertical.pointing.menu
-      a.item.active 首页
-      a.item 服装
-      a.item 鞋
+    header
+      .ui.stackable.menu(style="border-radius: 0")
+        .item Training Store
+        a.item 注册
+        a.item 登录
+    .search
+      .ui.action.input
+        input(type="text", placeholder="搜索")
+        button.ui.button.red 搜索
+
+    .container
+      .ui.grid
+        .four.wide.column
+          .ui.secondary.vertical.pointing.menu
+            a.item.active 首页
+            a.item 服装
+            a.item 鞋
+        .eight.wide.column 2
+        .four.wide.column 3
+

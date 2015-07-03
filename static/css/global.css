@@ -1,0 +1,8 @@
+.search{
+  text-align: center;
+  padding: 28px;
+}
+
+.search input[type="text"]{
+  width: 400px;
+}
