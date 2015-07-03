@@ -2,6 +2,10 @@
   $(document).ready(function(){
     $('.shape').shape('flip left');
 
+    $('.tabular.menu .item').tab();
+
+    $('.ui.dropdown').dropdown();
+
     $('.flexslider').flexslider({
       slideshowSpeed: 3000,
       controlNav: false

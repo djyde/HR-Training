@@ -20,3 +20,16 @@
 .menu .item{
   color: #000;
 }
+
+.tab-container{
+  background-color: #fff;
+  border-left: 1px solid #DDDEDE;
+  border-right: 1px solid #DDDEDE;
+  border-bottom: 1px solid #DDDEDE;
+  padding: 18px;
+  overflow: visible;
+}
+
+.pull-right{
+  float: right;
+}

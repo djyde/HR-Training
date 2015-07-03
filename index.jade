@@ -28,19 +28,38 @@ html
               a.item.active 首页
               a.item 手机、数码、通信
               a.item 电脑、办公
-              a.item 家居、家具、家装、厨具
-              a.item 男装、女装、内衣、珠宝
-              a.item 鞋靴、箱包、钟表、奢侈品
-              a.item 食品、酒类、生鲜、特产
-              a.item 图书、音像、数字商品
+              a.item 家居、家具、家装
+              a.item 男装、女装、内衣
+              a.item 鞋靴、箱包、钟表
+              a.item 食品、酒类、生鲜
+              a.item 图书、音像
           .nine.wide.column
             .flexslider
               ul.slides
                 li
-                  img(src="http://img30.360buyimg.com/da/jfs/t967/183/218906378/68120/73760059/550bd14eN4f3668d3.jpg")
+                  img(src="http://i.mmcdn.cn/simba/img/TB1BOYpHVXXXXaYXXXXSutbFXXX.jpg")
                 li
-                  img(src="http://img11.360buyimg.com/da/jfs/t826/149/1225678472/88702/43233b67/55911bd3N5d397e36.jpg")
-          .four.wide.column 3
+                  img(src="http://i.mmcdn.cn/simba/img/TB1euDuIXXXXXXrXVXXSutbFXXX.jpg")
+          .four.wide.column
+            .ui.top.attached.tabular.menu
+              .item.active(data-tab="phone") 电话充值
+              .item(data-tab="game") 游戏充值
+            .ui.tab.active(data-tab="phone")
+              .ui.form.tab-container
+                .field
+                  label 手机号码
+                  input(type="text")
+                .ui.submit.button.red 充值
+            .ui.tab(data-tab="game")
+              .ui.form.tab-container
+                .field
+                  label 游戏名称
+                  select.ui.dropdown
+                    option(value="lol") 英雄联盟
+                    option(value="qqt") QQ 堂
+                    option(value="csol") CSOL
+                .ui.submit.button.red 充值
+
       .section
         h2 推荐书籍
         .ui.six.column.grid.ui.special.cards
@@ -51,7 +70,7 @@ html
                   .ui.dimmer
                     .content
                       .center
-                        .ui.inverted.button Purchas
+                        .ui.inverted.button 购买
                   img(src="https://upload.wikimedia.org/wikipedia/commons/0/07/Goethe's_Faust.jpeg")
                 .content
                   a.header Faust
