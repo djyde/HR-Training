@@ -1,0 +1,26 @@
+extends layout
+
+block container
+  .sign
+    .ui.two.column.middle.aligned.very.relaxed.stackable.grid
+      .column
+        .ui.form
+          h1 注册
+          .required.field
+            label 用户名
+            input(type="text")
+          .required.field
+            label 邮箱
+            input(type="text",placeholder="randypriv@gmail.com")
+          .required.field
+            label 密码
+            input(type="password")
+          .required.field
+            .ui.checkbox
+              input.hidden(type="checkbox",tabindex="0")
+              label 我同意服务条款
+          .field
+            input.ui.submit.button.red(type="submit",value="注册")
+      .ui.vertical.divider 或
+      .center.aligned.column
+        a.ui.big.green.labeled.button(href="/login.html") 登录

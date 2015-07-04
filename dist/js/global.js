@@ -32,6 +32,8 @@ missingSerialize:"Required dependency jquery-serialize-object missing, using bas
 
     $('.tabular.menu .item').tab();
 
+    $('.ui.checkbox').checkbox();
+
     $('.ui.dropdown').dropdown();
 
     $('.flexslider').flexslider({

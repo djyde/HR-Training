@@ -41,8 +41,9 @@ footer{
   color: #000;
 }
 
-.ui.form.login{
-  padding-top: 48px;
-  width: 30%;
+.sign{
+  width: 46%;
   margin: 0 auto;
+  position: relative;
+  top: 128px;
 }

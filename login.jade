@@ -1,13 +1,19 @@
 extends layout
 
 block container
-  .ui.form.login
-    h1 登录
-    .field
-      label 用户名
-      input(type="text")
-    .field
-      label 密 码
-      input(type="password")
-    .field
-      input(type="submit",value="登录").ui.submit.button.red
+  .sign
+    .ui.two.column.middle.aligned.very.relaxed.stackable.grid
+      .column
+        .ui.form
+          h1 登录
+          .required.field
+            label 用户名
+            input(type="text")
+          .required.field
+            label 密 码
+            input(type="password")
+          .required.field
+            input(type="submit",value="登录").ui.submit.button.red
+      .ui.vertical.divider 或
+      .center.aligned.column
+        a.ui.big.green.labeled.button(href="/signup.html") 注册
