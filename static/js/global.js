@@ -22,7 +22,7 @@
     var initBooks = [{
       id: 1,
       title: 'Faust',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/0/07/Goethe\'s_Faust.jpeg',
+      image: '/static/images/faust.jpeg',
       author: 'Goethe',
       price: 12
     }]
@@ -47,7 +47,7 @@
           books.push({
             id: 1,
             title: 'Faust',
-            image: 'https://upload.wikimedia.org/wikipedia/commons/0/07/Goethe\'s_Faust.jpeg',
+            image: '/static/images/faust.jpeg',
             author: 'Goethe',
             price: 12
           })

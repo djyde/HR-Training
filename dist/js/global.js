@@ -58,7 +58,7 @@ missingSerialize:"Required dependency jquery-serialize-object missing, using bas
     var initBooks = [{
       id: 1,
       title: 'Faust',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/0/07/Goethe\'s_Faust.jpeg',
+      image: '/static/images/faust.jpeg',
       author: 'Goethe',
       price: 12
     }]
@@ -83,7 +83,7 @@ missingSerialize:"Required dependency jquery-serialize-object missing, using bas
           books.push({
             id: 1,
             title: 'Faust',
-            image: 'https://upload.wikimedia.org/wikipedia/commons/0/07/Goethe\'s_Faust.jpeg',
+            image: '/static/images/faust.jpeg',
             author: 'Goethe',
             price: 12
           })

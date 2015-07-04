@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Store</title>
+    <title>Online Shop</title>
     <link rel="stylesheet" href="dist/css/global.css">
   </head>
   <body id="app">
     <header>
-      <div style="border-radius: 0" class="ui stackable menu"><a href="/HR-Training" class="item">Training Store</a><a href="/HR-Training/signup.html" class="item aligned right">注册</a><a href="/HR-Training/login.html" class="item aligned right">登录</a><a href="/HR-Training/cart.html" data-content="已添加到购物车" id="cart" class="item aligned right">临时购物车
+      <div style="border-radius: 0" class="ui stackable menu"><a href="/" class="item">Online Shop</a><a href="/signup.html" class="item aligned right">注册</a><a href="/login.html" class="item aligned right">登录</a><a href="/cart.html" data-content="已添加到购物车" id="cart" class="item aligned right">临时购物车
           <div v-class="red: !isCartEmpty" v-text="cartCount" class="ui label cart-count"></div></a></div>
     </header>
     <div class="container">
@@ -24,8 +24,9 @@
           <div class="nine wide column">
             <div class="flexslider">
               <ul class="slides">
-                <li><img src="/HR-Training/static/images/ad1.jpg"></li>
-                <li><img src="static/images/ad2.jpg"></li>
+                <li><img src="http://gtms01.alicdn.com/tps/i1/TB1sorrIpXXXXc9XpXXXK5zTVXX-520-280.png_.webp"></li>
+                <li><img src="http://i.mmcdn.cn/simba/img/TB1jikYHpXXXXbVXpXXSutbFXXX.jpg"></li>
+                <li><img src="http://i.mmcdn.cn/simba/img/TB1_shcHFXXXXXyXpXXSutbFXXX.jpg"></li>
               </ul>
             </div>
           </div>
@@ -72,9 +73,9 @@
               <div class="blurring dimmable image">
                 <div class="ui dimmer">
                   <div class="content">
-                    <div class="center"><a href="/HR-Training/detail.html" class="ui inverted button red">详情</a></div>
+                    <div class="center"><a href="/detail.html" class="ui inverted button red">详情</a></div>
                   </div>
-                </div><img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Goethe's_Faust.jpeg">
+                </div><img src="/static/images/faust.jpeg">
               </div>
               <div class="content"><a class="header">Faust</a>
                 <div class="meta"><span class="date">Goethe</span></div>
