@@ -7,12 +7,8 @@ html
   body
     header
       .ui.stackable.menu(style="border-radius: 0")
-        .item Training Store
-        a.item 注册
-        a.item 登录
-    .search
-      .ui.action.input
-        input(type="text", placeholder="搜索")
-        button.ui.button.red 搜索
+        a.item(href="/") Training Store
+        a.item(href="/signup.html") 注册
+        a.item(href="/login.html") 登录
     .container
       block container

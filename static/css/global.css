@@ -40,3 +40,9 @@ footer{
   font-size: .9em;
   color: #000;
 }
+
+.ui.form.login{
+  padding-top: 48px;
+  width: 30%;
+  margin: 0 auto;
+}
