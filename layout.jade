@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title Store
+    link(rel="stylesheet", href="dist/css/global.css")
+    script(src="dist/js/global.js")
+  body
+    header
+      .ui.stackable.menu(style="border-radius: 0")
+        .item Training Store
+        a.item 注册
+        a.item 登录
+    .search
+      .ui.action.input
+        input(type="text", placeholder="搜索")
+        button.ui.button.red 搜索
+    .container
+      block container

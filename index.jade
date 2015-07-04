@@ -1,86 +1,66 @@
-doctype html
-html
-  head
-    title Store
-    link(rel="stylesheet", href="static/css/semantic.min.css")
-    link(rel="stylesheet", href="static/css/flexslider.css")
-    link(rel="stylesheet", href="static/css/global.css")
-    script(src="static/js/jquery.min.js")
-    script(src="static/js/jquery.flexslider-min.js")
-    script(src="static/js/semantic.min.js")
-    script(src="static/js/global.js")
-  body
-    header
-      .ui.stackable.menu(style="border-radius: 0")
-        .item Training Store
-        a.item 注册
-        a.item 登录
-    .search
-      .ui.action.input
-        input(type="text", placeholder="搜索")
-        button.ui.button.red 搜索
+extends layout
 
-    .container
-      .section
-        .ui.grid
-          .three.wide.column
-            .ui.secondary.vertical.pointing.menu.red(style="width: 100%")
-              a.item.active 首页
-              a.item 手机、数码、通信
-              a.item 电脑、办公
-              a.item 家居、家具、家装
-              a.item 男装、女装、内衣
-              a.item 鞋靴、箱包、钟表
-              a.item 食品、酒类、生鲜
-              a.item 图书、音像
-          .nine.wide.column
-            .flexslider
-              ul.slides
-                li
-                  img(src="http://i.mmcdn.cn/simba/img/TB1BOYpHVXXXXaYXXXXSutbFXXX.jpg")
-                li
-                  img(src="http://i.mmcdn.cn/simba/img/TB1euDuIXXXXXXrXVXXSutbFXXX.jpg")
-          .four.wide.column
-            .ui.top.attached.tabular.menu
-              .item.active(data-tab="phone") 电话充值
-              .item(data-tab="game") 游戏充值
-            .ui.tab.active(data-tab="phone")
-              .ui.form.tab-container
-                .field
-                  label 手机号码
-                  input(type="text")
-                .ui.submit.button.red 充值
-            .ui.tab(data-tab="game")
-              .ui.form.tab-container
-                .field
-                  label 游戏名称
-                  select.ui.dropdown
-                    option(value="lol") 英雄联盟
-                    option(value="qqt") QQ 堂
-                    option(value="csol") CSOL
-                .field
-                  label 账号
-                  input(type="text")
-                .ui.submit.button.red 充值
+block container
+  .section
+    .ui.grid
+      .three.wide.column
+        .ui.secondary.vertical.pointing.menu.red(style="width: 100%")
+          a.item.active 首页
+          a.item 手机、数码、通信
+          a.item 电脑、办公
+          a.item 家居、家具、家装
+          a.item 男装、女装、内衣
+          a.item 鞋靴、箱包、钟表
+          a.item 食品、酒类、生鲜
+          a.item 图书、音像
+      .nine.wide.column
+        .flexslider
+          ul.slides
+            li
+              img(src="http://i.mmcdn.cn/simba/img/TB1BOYpHVXXXXaYXXXXSutbFXXX.jpg")
+            li
+              img(src="http://i.mmcdn.cn/simba/img/TB1euDuIXXXXXXrXVXXSutbFXXX.jpg")
+      .four.wide.column
+        .ui.top.attached.tabular.menu
+          .item.active(data-tab="phone") 电话充值
+          .item(data-tab="game") 游戏充值
+        .ui.tab.active(data-tab="phone")
+          .ui.form.tab-container
+            .field
+              label 手机号码
+              input(type="text")
+            .ui.submit.button.red 充值
+        .ui.tab(data-tab="game")
+          .ui.form.tab-container
+            .field
+              label 游戏名称
+              select.ui.dropdown
+                option(value="lol") 英雄联盟
+                option(value="qqt") QQ 堂
+                option(value="csol") CSOL
+            .field
+              label 账号
+              input(type="text")
+            .ui.submit.button.red 充值
 
-      .section
-        h2 推荐书籍
-        .ui.six.column.grid.ui.special.cards
-          - for(var i = 0; i < 10; i++)
-            .column
-              .ui.fluid.card
-                .blurring.dimmable.image
-                  .ui.dimmer
-                    .content
-                      .center
-                        .ui.inverted.button.red 购买
-                  img(src="https://upload.wikimedia.org/wikipedia/commons/0/07/Goethe's_Faust.jpeg")
+  .section
+    h2 推荐书籍
+    .ui.six.column.grid.ui.special.cards
+      - for(var i = 0; i < 10; i++)
+        .column
+          .ui.fluid.card
+            .blurring.dimmable.image
+              .ui.dimmer
                 .content
-                  a.header Faust
-                  .meta
-                    span.date 歌德
-                .extra.content
-                  a 12 元
+                  .center
+                    .ui.inverted.button.red 购买
+              img(src="https://upload.wikimedia.org/wikipedia/commons/0/07/Goethe's_Faust.jpeg")
+            .content
+              a.header Faust
+              .meta
+                span.date 歌德
+            .extra.content
+              a 12 元
 
-       
-    footer Copyright 2015 Randy & Scarllet
+   
+footer Copyright 2015 Randy & Scarllet
