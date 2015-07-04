@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 gulp.task('default',function(){
   gulp.watch('./static/js/*.js',['scripts']);
   gulp.watch('./static/css/*.css',['css']);
-  gulp.watch('./*.jade',['jade']);
+  gulp.watch('./static/jade/*.jade',['jade']);
 })
 
 gulp.task('scripts',function(){
@@ -22,7 +22,7 @@ gulp.task('css',function(){
 })
 
 gulp.task('jade',function(){
-  gulp.src('./*.jade')
+  gulp.src('./static/jade/*.jade')
     .pipe(jade({
       pretty: true
     }))

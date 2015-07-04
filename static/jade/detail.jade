@@ -1,0 +1,67 @@
+extends layout
+
+block container
+  div(style="padding-top: 48px;")
+    .ui.breadcrumb
+      a.section(href="/") 首页
+      .divider /
+      a.section 书籍
+      .divider /
+      .section Faust
+      .divider /
+    .ui.grid
+      .six.wide.column
+        .ui.fluid.image
+          .ui.red.ribbon.label 促销
+          img(src="http://img10.360buyimg.com/n1/jfs/t166/248/1753321698/20576/391c5dca/53b95607N368d474d.jpg")
+      .ten.wide.column
+        h2 《浮士德》
+        p Johann Wolfgang Von Goethe，Walter Kaufmann 著
+        .ui.tag.labels
+          .ui.label.red ￥12.00
+          .ui.label.green 包邮
+          .ui.label.green 满 20 减 10
+        br
+        br
+        .ui.button.red.large 加入购物车
+        .ui.button.green.large 一键购买
+    h5.ui.top.attached.header 商品信息
+    .ui.attached.segment
+      p(style="line-height: 28px;") 《浮士德》（德语：Faust）是德国大文豪歌德于1808年发表的一部悲剧。传统上，《浮士德》被认为是德语文学中最优秀的作品，同时也是最经常被引用的作品。
+      p 该剧主人公浮士德也曾出现在其他作家的作品中，但歌德给他的形象赋予了深刻的人格寓意。
+      p 作者： von Goethe, Johann Wolfgang; Taylor, Bayard;
+      p ISBN13： 9788087830499
+      p 类型： 平装
+      p 出版日期： 2013-07-14
+      p 出版社： Important Books
+      p 页数： 164
+      p 重量（克）： 303
+      p 尺寸： 246 x 189 x 9 mm
+    h5.ui.top.attached.header 评价
+    .ui.attached.segment
+      .ui.comments
+        .comment
+          a.avatar
+            img(src="http://www.semantic-ui.com/images/avatar/small/steve.jpg")
+          .content
+            a.author Steve Jobs
+            .metadata
+              .date 1 day ago
+            .text Randy is an awesome coder! What a great online shop!
+        .comment
+          a.avatar
+            img(src="http://www.semantic-ui.com/images/avatar/small/joe.jpg")
+          .content
+            a.author Scarllet
+            .metadata
+              .date 22 minutes ago
+            .text I think Randy is a talent coder.
+          .comments
+            .comment
+              a.avatar
+                img(src="http://www.semantic-ui.com/images/avatar/small/jenny.jpg")
+              .content
+                a.author Jenny
+                .metadata
+                  .date 22 minutes ago
+                .text But he was forced to be in school. What a pity.
