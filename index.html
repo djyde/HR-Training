@@ -3,11 +3,11 @@
   <head>
     <title>Store</title>
     <link rel="stylesheet" href="dist/css/global.css">
-    <script src="dist/js/global.js"></script>
   </head>
-  <body>
+  <body id="app">
     <header>
-      <div style="border-radius: 0" class="ui stackable menu"><a href="/HR-Training" class="item">Training Store</a><a href="/HR-Training/signup.html" class="item">注册</a><a href="/HR-Training/login.html" class="item">登录</a></div>
+      <div style="border-radius: 0" class="ui stackable menu"><a href="/HR-Training" class="item">Training Store</a><a href="/HR-Training/signup.html" class="item aligned right">注册</a><a href="/HR-Training/login.html" class="item aligned right">登录</a><a href="/HR-Training/cart.html" data-content="已添加到购物车" id="cart" class="item aligned right">临时购物车
+          <div v-class="red: !isCartEmpty" v-text="cartCount" class="ui label cart-count"></div></a></div>
     </header>
     <div class="container">
       <div class="search">
@@ -24,8 +24,8 @@
           <div class="nine wide column">
             <div class="flexslider">
               <ul class="slides">
-                <li><img src="http://i.mmcdn.cn/simba/img/TB1BOYpHVXXXXaYXXXXSutbFXXX.jpg"></li>
-                <li><img src="http://i.mmcdn.cn/simba/img/TB1euDuIXXXXXXrXVXXSutbFXXX.jpg"></li>
+                <li><img src="/HR-Training/static/images/ad1.jpg"></li>
+                <li><img src="static/images/ad2.jpg"></li>
               </ul>
             </div>
           </div>
@@ -63,9 +63,10 @@
           </div>
         </div>
       </div>
-      <div class="section">
+      <div id="book-section" class="section">
         <h2>推荐书籍</h2>
         <div class="ui six column grid ui special cards">
+          <p>{{books.length}}</p>
           <div class="column">
             <div class="ui fluid card">
               <div class="blurring dimmable image">
@@ -76,142 +77,7 @@
                 </div><img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Goethe's_Faust.jpeg">
               </div>
               <div class="content"><a class="header">Faust</a>
-                <div class="meta"><span class="date">歌德</span></div>
-              </div>
-              <div class="extra content"><a>12 元</a></div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui fluid card">
-              <div class="blurring dimmable image">
-                <div class="ui dimmer">
-                  <div class="content">
-                    <div class="center"><a href="/HR-Training/detail.html" class="ui inverted button red">详情</a></div>
-                  </div>
-                </div><img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Goethe's_Faust.jpeg">
-              </div>
-              <div class="content"><a class="header">Faust</a>
-                <div class="meta"><span class="date">歌德</span></div>
-              </div>
-              <div class="extra content"><a>12 元</a></div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui fluid card">
-              <div class="blurring dimmable image">
-                <div class="ui dimmer">
-                  <div class="content">
-                    <div class="center"><a href="/HR-Training/detail.html" class="ui inverted button red">详情</a></div>
-                  </div>
-                </div><img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Goethe's_Faust.jpeg">
-              </div>
-              <div class="content"><a class="header">Faust</a>
-                <div class="meta"><span class="date">歌德</span></div>
-              </div>
-              <div class="extra content"><a>12 元</a></div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui fluid card">
-              <div class="blurring dimmable image">
-                <div class="ui dimmer">
-                  <div class="content">
-                    <div class="center"><a href="/HR-Training/detail.html" class="ui inverted button red">详情</a></div>
-                  </div>
-                </div><img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Goethe's_Faust.jpeg">
-              </div>
-              <div class="content"><a class="header">Faust</a>
-                <div class="meta"><span class="date">歌德</span></div>
-              </div>
-              <div class="extra content"><a>12 元</a></div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui fluid card">
-              <div class="blurring dimmable image">
-                <div class="ui dimmer">
-                  <div class="content">
-                    <div class="center"><a href="/HR-Training/detail.html" class="ui inverted button red">详情</a></div>
-                  </div>
-                </div><img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Goethe's_Faust.jpeg">
-              </div>
-              <div class="content"><a class="header">Faust</a>
-                <div class="meta"><span class="date">歌德</span></div>
-              </div>
-              <div class="extra content"><a>12 元</a></div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui fluid card">
-              <div class="blurring dimmable image">
-                <div class="ui dimmer">
-                  <div class="content">
-                    <div class="center"><a href="/HR-Training/detail.html" class="ui inverted button red">详情</a></div>
-                  </div>
-                </div><img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Goethe's_Faust.jpeg">
-              </div>
-              <div class="content"><a class="header">Faust</a>
-                <div class="meta"><span class="date">歌德</span></div>
-              </div>
-              <div class="extra content"><a>12 元</a></div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui fluid card">
-              <div class="blurring dimmable image">
-                <div class="ui dimmer">
-                  <div class="content">
-                    <div class="center"><a href="/HR-Training/detail.html" class="ui inverted button red">详情</a></div>
-                  </div>
-                </div><img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Goethe's_Faust.jpeg">
-              </div>
-              <div class="content"><a class="header">Faust</a>
-                <div class="meta"><span class="date">歌德</span></div>
-              </div>
-              <div class="extra content"><a>12 元</a></div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui fluid card">
-              <div class="blurring dimmable image">
-                <div class="ui dimmer">
-                  <div class="content">
-                    <div class="center"><a href="/HR-Training/detail.html" class="ui inverted button red">详情</a></div>
-                  </div>
-                </div><img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Goethe's_Faust.jpeg">
-              </div>
-              <div class="content"><a class="header">Faust</a>
-                <div class="meta"><span class="date">歌德</span></div>
-              </div>
-              <div class="extra content"><a>12 元</a></div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui fluid card">
-              <div class="blurring dimmable image">
-                <div class="ui dimmer">
-                  <div class="content">
-                    <div class="center"><a href="/HR-Training/detail.html" class="ui inverted button red">详情</a></div>
-                  </div>
-                </div><img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Goethe's_Faust.jpeg">
-              </div>
-              <div class="content"><a class="header">Faust</a>
-                <div class="meta"><span class="date">歌德</span></div>
-              </div>
-              <div class="extra content"><a>12 元</a></div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui fluid card">
-              <div class="blurring dimmable image">
-                <div class="ui dimmer">
-                  <div class="content">
-                    <div class="center"><a href="/HR-Training/detail.html" class="ui inverted button red">详情</a></div>
-                  </div>
-                </div><img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Goethe's_Faust.jpeg">
-              </div>
-              <div class="content"><a class="header">Faust</a>
-                <div class="meta"><span class="date">歌德</span></div>
+                <div class="meta"><span class="date">Goethe</span></div>
               </div>
               <div class="extra content"><a>12 元</a></div>
             </div>
@@ -219,6 +85,7 @@
         </div>
       </div>
     </div>
+    <script src="dist/js/global.js"></script>
     <footer>Copyright 2015 Randy & Scarllet</footer>
   </body>
 </html>

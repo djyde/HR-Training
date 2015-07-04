@@ -21,9 +21,9 @@ block container
         .flexslider
           ul.slides
             li
-              img(src="http://i.mmcdn.cn/simba/img/TB1BOYpHVXXXXaYXXXXSutbFXXX.jpg")
+              img(src="/HR-Training/static/images/ad1.jpg")
             li
-              img(src="http://i.mmcdn.cn/simba/img/TB1euDuIXXXXXXrXVXXSutbFXXX.jpg")
+              img(src="static/images/ad2.jpg")
       .four.wide.column
         .ui.top.attached.tabular.menu
           .item.active(data-tab="phone") 电话充值
@@ -47,21 +47,21 @@ block container
               input(type="text")
             .ui.submit.button.red 充值
 
-  .section
+  .section#book-section
     h2 推荐书籍
     .ui.six.column.grid.ui.special.cards
-      - for(var i = 0; i < 10; i++)
-        .column
-          .ui.fluid.card
-            .blurring.dimmable.image
-              .ui.dimmer
-                .content
-                  .center
-                    a.ui.inverted.button.red(href="/HR-Training/detail.html") 详情
-              img(src="https://upload.wikimedia.org/wikipedia/commons/0/07/Goethe's_Faust.jpeg")
-            .content
-              a.header Faust
-              .meta
-                span.date 歌德
-            .extra.content
-              a 12 元
+      p {{books.length}}
+      .column
+        .ui.fluid.card
+          .blurring.dimmable.image
+            .ui.dimmer
+              .content
+                .center
+                  a.ui.inverted.button.red(href="/HR-Training/detail.html") 详情
+            img(src="https://upload.wikimedia.org/wikipedia/commons/0/07/Goethe's_Faust.jpeg")
+          .content
+            a.header Faust
+            .meta
+              span.date Goethe
+          .extra.content
+            a 12 元

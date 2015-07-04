@@ -23,7 +23,7 @@ block container
           .ui.label.green 满 20 减 10
         br
         br
-        .ui.button.red.large 加入购物车
+        .ui.button.red.large(v-on="click: add") 加入购物车
         .ui.button.green.large 一键购买
     h5.ui.top.attached.header 商品信息
     .ui.attached.segment

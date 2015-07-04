@@ -3,14 +3,17 @@ html
   head
     title Store
     link(rel="stylesheet", href="dist/css/global.css")
-    script(src="dist/js/global.js")
-  body
+  body#app
     header
       .ui.stackable.menu(style="border-radius: 0")
         a.item(href="/HR-Training") Training Store
-        a.item(href="/HR-Training/signup.html") 注册
-        a.item(href="/HR-Training/login.html") 登录
+        a.item.aligned.right(href="/HR-Training/signup.html") 注册
+        a.item.aligned.right(href="/HR-Training/login.html") 登录
+        a.item.aligned.right(href="/HR-Training/cart.html",data-content="已添加到购物车")#cart 临时购物车
+          .ui.label.cart-count(v-class="red: !isCartEmpty",v-text="cartCount")
     .container
       block container
+    script(src="dist/js/global.js")
+    
     
     footer Copyright 2015 Randy & Scarllet

@@ -10,7 +10,7 @@ gulp.task('default',function(){
 })
 
 gulp.task('scripts',function(){
-  gulp.src(['./static/js/jquery.min.js','./static/js/semantic.min.js','./static/js/jquery.flexslider-min.js','./static/js/global.js'])
+  gulp.src(['./static/js/jquery.min.js','./static/js/vue.min.js','./static/js/semantic.min.js','./static/js/jquery.flexslider-min.js','./static/js/global.js'])
     .pipe(concat('global.js'))
     .pipe(gulp.dest('./dist/js'))
 })

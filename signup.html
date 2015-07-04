@@ -3,11 +3,11 @@
   <head>
     <title>Store</title>
     <link rel="stylesheet" href="dist/css/global.css">
-    <script src="dist/js/global.js"></script>
   </head>
-  <body>
+  <body id="app">
     <header>
-      <div style="border-radius: 0" class="ui stackable menu"><a href="/HR-Training" class="item">Training Store</a><a href="/HR-Training/signup.html" class="item">注册</a><a href="/HR-Training/login.html" class="item">登录</a></div>
+      <div style="border-radius: 0" class="ui stackable menu"><a href="/HR-Training" class="item">Training Store</a><a href="/HR-Training/signup.html" class="item aligned right">注册</a><a href="/HR-Training/login.html" class="item aligned right">登录</a><a href="/HR-Training/cart.html" data-content="已添加到购物车" id="cart" class="item aligned right">临时购物车
+          <div v-class="red: !isCartEmpty" v-text="cartCount" class="ui label cart-count"></div></a></div>
     </header>
     <div class="container">
       <div class="sign">
@@ -43,6 +43,7 @@
         </div>
       </div>
     </div>
+    <script src="dist/js/global.js"></script>
     <footer>Copyright 2015 Randy & Scarllet</footer>
   </body>
 </html>

@@ -10,6 +10,17 @@
           <div v-class="red: !isCartEmpty" v-text="cartCount" class="ui label cart-count"></div></a></div>
     </header>
     <div class="container">
+      <div style="margin: 0 auto;margin-top: 48px; width: 40%;">
+        <h3 v-if="isCartEmpty" style="text-align: center;">你的购物车里没有东西 :)</h3>
+        <div class="ui divided items">
+          <div v-repeat="books" class="item">
+            <div class="ui tiny image"><img v-attr="src: image"></div>
+            <div class="middle aligned content"><a href="/HR-Training/detail.html">{{title}}</a>
+              <div v-on="click: remove($index)" class="ui button right floated">移除</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="dist/js/global.js"></script>
     <footer>Copyright 2015 Randy & Scarllet</footer>

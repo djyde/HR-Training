@@ -1,0 +1,12 @@
+extends layout
+
+block container
+  div(style="margin: 0 auto;margin-top: 48px; width: 40%;")
+    h3(v-if="isCartEmpty",style="text-align: center;") 你的购物车里没有东西 :)
+    .ui.divided.items
+      .item(v-repeat="books")
+        .ui.tiny.image
+          img(v-attr="src: image")
+        .middle.aligned.content
+          a(href="/HR-Training/detail.html") {{title}}
+          .ui.button.right.floated(v-on="click: remove($index)") 移除
